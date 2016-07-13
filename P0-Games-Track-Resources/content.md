@@ -25,7 +25,9 @@ This page compiles the ones that we think are the most useful. If you find somet
 # Art Assets
 
 > [info]
-> **Make sure to pay attention the licenses of any resources you use!** See the copyright discussion in the lectures section of you dashboard and document everything in your spreadsheet.
+> **Make sure to pay attention the licenses of any resources you use!**
+
+![ms-video-youtube](https://www.youtube.com/watch?v=XdXAgTHRulM)
 
 - [OpenGameArt](http://opengameart.org/), free resources
 - [Sprite Land](http://www.spriteland.com/sprites/), free resources
