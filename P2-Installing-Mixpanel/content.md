@@ -108,7 +108,7 @@ You should see something like this:
 >
 >       import Mixpanel
 >
-> Now add the following to the `application` method so that it gets run after the app is launched.
+> Now add the following to the `application:didFinishLaunchingWithOptions:` method so that it gets run after the app is launched.
 >
 >        Mixpanel.sharedInstanceWithToken(YOUR_TOKEN_HERE)
 >        let mixpanel: Mixpanel = Mixpanel.sharedInstance()
