@@ -52,12 +52,19 @@ Now a _Podfile_ with some skeleton content will be created. Open the _Podfile_ i
 
 ```
 # Uncomment this line to define a global platform for your project
-# platform :ios, '8.0'
-# Uncomment this line if you're using Swift
-# use_frameworks!
-
+# platform :ios, '9.0'
 target 'ProjectName' do
-
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  # Pods for ProjectName
+  target 'ProjectNameTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  target 'ProjectNameUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 end
 ```
 
@@ -67,16 +74,25 @@ Now we are ready to add a dependency to this file. For the feature we want to im
 It will help us to convert time spans into human readable strings.
 
 > [action]
-> Add the _Mixpanel_ dependency to your _Podfile_ and add remove the `#` in front of `use_frameworks!` at the top so that it looks like this:
+> Add the _Mixpanel_ dependency to your _Podfile_ under `use_frameworks!`:
 >
 ```
 # Uncomment this line to define a global platform for your project
-# platform :ios, '8.0'
-# Uncomment this line if you're using Swift
-use_frameworks!
-
+# platform :ios, '9.0'
 target 'ProjectName' do
-  pod 'Mixpanel'
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  # Pods for ProjectName
+  pod 'MixPanel'
+>
+  target 'ProjectNameTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  target 'ProjectNameUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 end
 ```
 >
